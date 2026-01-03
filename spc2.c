@@ -14,7 +14,7 @@ struct AmbulanceBooking {
 void bookAmbulance() {
     struct AmbulanceBooking booking;
 
-    printf("\n----- BAPESS Ambulance Booking -----\n");
+    printf("\n----- BAPESSS Ambulance Booking -----\n");
 
     printf("Enter Patient Name: ");
     getchar(); // clear buffer
@@ -33,7 +33,7 @@ void bookAmbulance() {
     printf("Enter Contact Number: ");
     fgets(booking.contactNumber, sizeof(booking.contactNumber), stdin);
 
-    printf("\n🚑 Ambulance Booked Successfully!\n");
+    printf("\n Ambulance Booked Successfully!\n");
     printf("----------------------------------\n");
     printf("Patient Name   : %s", booking.patientName);
     printf("Age            : %d\n", booking.age);
@@ -48,7 +48,7 @@ int main() {
     int choice;
 
     printf("====================================\n");
-    printf("   BApESS Ambulance Booking System   \n");
+    printf("   BAPESSS Ambulance Booking System   \n");
     printf("====================================\n");
 
     while (1) {
@@ -62,10 +62,11 @@ int main() {
                 bookAmbulance();
                 break;
             case 2:
-                printf("\nThank you for using BApESS 🚑\n");
+                printf("\nThank you for using BAPESSS 🚑\n");
                 return 0;
             default:
                 printf("\nInvalid choice! Try again.\n");
         }
     }
 }
+
